@@ -1,0 +1,19 @@
+p,{
+  text-indent: 25px;
+  outline-style: solid;
+}
+a{
+  color: black;
+}
+
+h1{
+  font-family: sans-serif;
+}
+h2 {
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
+li{
+  color: black;
+}
