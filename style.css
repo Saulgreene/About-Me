@@ -1,3 +1,9 @@
+*{
+  background-color: lightgrey;
+}
+#quiz{
+  background-color: grey;
+}
 p,{
   text-indent: 25px;
   outline-style: solid;
@@ -8,10 +14,18 @@ a{
 
 h1{
   font-family: sans-serif;
+  text-align: center;
+  background-color: gray;
+  border: 2px solid crimson;
+  border-radius: 15px;
 }
 h2 {
   font-family: sans-serif;
-  text-decoration: underline;
+  text-align: center;
+  background-color: gray;
+  border: 2px solid crimson;
+  border-radius: 10px;
+
 }
 
 li{
