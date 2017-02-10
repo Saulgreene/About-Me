@@ -37,32 +37,37 @@ if (confirmQuiz){
   questionsOneThroughFive();
 
 //Question 6 (4 tries and responses)------------------------------------------
-  var minRandomNumber = 0;
-  var maxRandomNumber = 50;
-  var tries = 4;
-  var guesses = 0;
-  for (var i = 0; i < tries; i++) {
-    guesses += 1;
-    var myAge = Math.floor(Math.random() * ( maxRandomNumber - minRandomNumber + 1) + min);
-    var ageGuess = prompt('Guess how old Saul is...');
-    ageGuess = parseInt(ageGuess, 10);
-    if (ageGuess < myAge) {
-      alert('too low');
-    }else if (ageGuess > myAge) {
-      alert('too high');
-    }else if ( ageGuess === myAge) {
-      if ( guesses === 1){
-        alert('right!, you got it in ' + guesses + ' guess');
-        score += 1;
-      }else{
-        alert('right!, you got it in ' + guesses + ' guesses');
-        score += 1;
+  function questionSix(){
+    var minRandomNumber = 0;
+    var maxRandomNumber = 50;
+    var tries = 4;
+    var guesses = 0;
+    for (var i = 0; i < tries; i++) {
+      guesses += 1;
+      var myAge = Math.floor(Math.random() * ( maxRandomNumber - minRandomNumber + 1) + min);
+      var ageGuess = prompt('Guess how old Saul is...');
+      ageGuess = parseInt(ageGuess, 10);
+      if (ageGuess < myAge) {
+        alert('too low');
+      }else if (ageGuess > myAge) {
+        alert('too high');
+      }else if ( ageGuess === myAge) {
+        if ( guesses === 1){
+          alert('right!, you got it in ' + guesses + ' guess');
+          score += 1;
+        }else{
+          alert('right!, you got it in ' + guesses + ' guesses');
+          score += 1;
+        }
+        break;
+      }else {
+        alert('try again');
       }
-      break;
-    }else {
-      alert('try again');
     }
   }
+
+  questionSix();
+  
   // Question 7 (6 tries)--------------------------------------------------------
   var maxGuess = 7;
   for(var guess = 0; guess < maxGuess; guess++){
