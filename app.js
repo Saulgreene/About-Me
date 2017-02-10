@@ -67,33 +67,38 @@ if (confirmQuiz){
   }
 
   questionSix();
-  
+
   // Question 7 (6 tries)--------------------------------------------------------
-  var maxGuess = 7;
-  for(var guess = 0; guess < maxGuess; guess++){
-    var carBrands = ['chevy', 'ford', 'infiniti', 'lexus', 'jeep', 'range rover', 'audi', 'bmw'];
-    var userInput = prompt('What is one brand of car Saul has owned?');
-    var brandGuessedCorrectlyFlag = false;
-    for(var carPosition = 0; carPosition < carBrands.length; carPosition++){
-      if(userInput === carBrands[carPosition]){
-        brandGuessedCorrectlyFlag = true;
-        break;
+  function questionSeven(){
+    var maxGuess = 7;
+    for(var guess = 0; guess < maxGuess; guess++){
+      var carBrands = ['chevy', 'ford', 'infiniti', 'lexus', 'jeep', 'range rover', 'audi', 'bmw'];
+      var userInput = prompt('What is one brand of car Saul has owned?');
+      var brandGuessedCorrectlyFlag = false;
+      for(var carPosition = 0; carPosition < carBrands.length; carPosition++){
+        if(userInput === carBrands[carPosition]){
+          brandGuessedCorrectlyFlag = true;
+          break;
+        }
       }
-    }
-    if(brandGuessedCorrectlyFlag === true){
-      console.log('correct, saul has owned a ' + carBrands);
-      alert('correct, saul has owned a ' + carBrands);
-      score += 1;
-      break;
-    }else{
-      console.log('sorry, you must not know saul very well');
-      alert('sorry, you must not know saul very well');
-      if(guess === 6){
-        console.log('Sorry, you are out of guesses, if you were wondering though, saul has owned a: ' + carBrands);
-        alert('Sorry, you are out of guesses, if you were wondering though, saul has owned a: ' + carBrands);
+      if(brandGuessedCorrectlyFlag === true){
+        console.log('correct, saul has owned a ' + carBrands);
+        alert('correct, saul has owned a ' + carBrands);
+        score += 1;
+        break;
+      }else{
+        console.log('sorry, you must not know saul very well');
+        alert('sorry, you must not know saul very well');
+        if(guess === 6){
+          console.log('Sorry, you are out of guesses, if you were wondering though, saul has owned a: ' + carBrands);
+          alert('Sorry, you are out of guesses, if you were wondering though, saul has owned a: ' + carBrands);
+        }
       }
     }
   }
+
+  questionSeven();
+
   //Scoring Code----------------------------------------------------------------
   alert('Your Score: ' + score + '/7');
 }else{
