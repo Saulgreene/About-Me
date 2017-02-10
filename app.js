@@ -32,13 +32,13 @@ if (confirmQuiz){
     }
   }
 //Question 6 (4 tries and responses)------------------------------------------
-  var min = 0;
-  var max = 50;
+  var minRandomNumber = 0;
+  var maxRandomNumber = 50;
   var tries = 4;
   var guesses = 0;
   for (var i = 0; i < tries; i++) {
     guesses += 1;
-    var myAge = Math.floor(Math.random() * ( max - min + 1) + min);
+    var myAge = Math.floor(Math.random() * ( maxRandomNumber - minRandomNumber + 1) + min);
     var ageGuess = prompt('Guess how old Saul is...');
     ageGuess = parseInt(ageGuess, 10);
     if (ageGuess < myAge) {

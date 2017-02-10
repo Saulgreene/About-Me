@@ -1,9 +1,7 @@
 *{
   background-color: lightgrey;
 }
-#quiz{
-  background-color: grey;
-}
+
 p,{
   text-indent: 25px;
   outline-style: solid;
@@ -17,14 +15,14 @@ h1{
   text-align: center;
   background-color: gray;
   border: 2px solid crimson;
-  border-radius: 15px;
+  border-radius: 100px;
 }
 h2 {
   font-family: sans-serif;
   text-align: center;
   background-color: gray;
   border: 2px solid crimson;
-  border-radius: 10px;
+  border-radius: 100px;
 
 }
 
