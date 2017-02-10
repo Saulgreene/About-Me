@@ -100,8 +100,13 @@ if (confirmQuiz){
   questionSeven();
 
   //Scoring Code----------------------------------------------------------------
-  alert('Your Score: ' + score + '/7');
-}else{
+  function totalScore(){
+    alert('Your Score: ' + score + '/7');
+  }
+
+  totalScore();
+
+} else {
   alert('Thats Fine');
   console.log('Thats fine...');
 }
