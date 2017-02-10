@@ -20,17 +20,22 @@ if (confirmQuiz){
     'Too Bad, you were wrong.'];
   var score = 0;
 //Question 1-5 -------------------------------------------------------------------
-  for(var i = 1; i < questions.length; i++){
-    var answer = prompt(questions[i]);
-    if(answer.toUpperCase() === 'YES'){
-      console.log(responses[0]);
-      alert(responses[0]);
-      score += 1;
-    }else{
-      console.log(responses[1]);
-      alert(responses[1]);
+  function questionsOneThroughFive(){
+    for(var i = 1; i < questions.length; i++){
+      var answer = prompt(questions[i]);
+      if(answer.toUpperCase() === 'YES'){
+        console.log(responses[0]);
+        alert(responses[0]);
+        score += 1;
+      }else{
+        console.log(responses[1]);
+        alert(responses[1]);
+      }
     }
   }
+
+  questionsOneThroughFive();
+
 //Question 6 (4 tries and responses)------------------------------------------
   var minRandomNumber = 0;
   var maxRandomNumber = 50;
