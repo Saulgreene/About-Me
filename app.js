@@ -19,8 +19,8 @@ if (confirmQuiz){
     'Awesome, you are correct!',
     'Too Bad, you were wrong.'];
   var score = 0;
-//Question 1-5 ----------------------------------------------------------------
-  //creating the function
+
+//Question 1-5 ---------------------------------------------------
   function questionsOneThroughFive(){
     for(var i = 1; i < questions.length; i++){
       var answer = prompt(questions[i]);
@@ -34,6 +34,7 @@ if (confirmQuiz){
       }
     }
   }
+
   //calling the function
   questionsOneThroughFive();
 //Question 6 (4 tries and responses)------------------------------------------
@@ -45,6 +46,7 @@ if (confirmQuiz){
     var guesses = 0;
     for (var i = 0; i < tries; i++) {
       guesses += 1;
+
       var myAge = Math.floor(Math.random() * ( max - min + 1) + min);
       var ageGuess = prompt('Guess how old Saul is...');
       ageGuess = parseInt(ageGuess, 10);
@@ -66,9 +68,10 @@ if (confirmQuiz){
       }
     }
   }
+
 //calling the function
   questionSix();
-
+  
   // Question 7 (6 tries)--------------------------------------------------------
   //creating the function...
   function questionSeven(){
@@ -78,6 +81,7 @@ if (confirmQuiz){
       var userInput = prompt('What is one brand of car Saul has owned?');
       var brandGuessedCorrectlyFlag = false;
       for(var carPosition = 0; carPosition < carBrands.length; carPosition++){
+
         if(userInput.toLowerCase() === carBrands[carPosition]){
           brandGuessedCorrectlyFlag = true;
           break;
@@ -98,6 +102,7 @@ if (confirmQuiz){
       }
     }
   }
+
   //calling the function..
   questionSeven();
   //Scoring Code----------------------------------------------------------------
