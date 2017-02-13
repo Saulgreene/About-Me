@@ -1,3 +1,13 @@
+nav li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.TopTen{
+  float: right;
+  margin: 0 0 10px 10px;
+}
 *{
   background-color: lightgrey;
 }
@@ -12,8 +22,9 @@ a{
 
 h1{
   font-family: sans-serif;
-  text-align: center;
+  text-align: center;;
   background-color: gray;
+  border: 2px solid crimson;
   border: 2px solid crimson;
   border-radius: 100px;
 }

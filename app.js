@@ -34,7 +34,6 @@ if (confirmQuiz){
       }
     }
   }
-
   //calling the function
   questionsOneThroughFive();
 //Question 6 (4 tries and responses)------------------------------------------
@@ -71,7 +70,7 @@ if (confirmQuiz){
 
 //calling the function
   questionSix();
-  
+
   // Question 7 (6 tries)--------------------------------------------------------
   //creating the function...
   function questionSeven(){
