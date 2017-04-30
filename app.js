@@ -76,7 +76,7 @@ if (confirmQuiz){
   function questionSeven(){
     var maxGuess = 7;
     for(var guess = 0; guess < maxGuess; guess++){
-      var carBrands = ['chevy', 'ford', 'infiniti', 'lexus', 'jeep', 'range rover', 'audi', 'bmw'];
+      var carBrands = ['chevy', 'mercury', 'infiniti'];
       var userInput = prompt('What is one brand of car Saul has owned?');
       var brandGuessedCorrectlyFlag = false;
       for(var carPosition = 0; carPosition < carBrands.length; carPosition++){
