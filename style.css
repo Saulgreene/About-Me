@@ -1,3 +1,43 @@
+
+nav li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+*{
+  background-color: lightgrey;
+}
+
+p,{
+  text-indent: 25px;
+  outline-style: solid;
+}
+a{
+  color: black;
+}
+
+h1{
+  font-family: sans-serif;
+  text-align: center;;
+  background-color: gray;
+  border: 2px solid crimson;
+  border: 2px solid crimson;
+  border-radius: 100px;
+}
+h2 {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: gray;
+  border: 2px solid crimson;
+  border-radius: 100px;
+
+}
+
+li{
+  color: black;
+}
 nav li {
     list-style-type: none;
     margin: 0;
